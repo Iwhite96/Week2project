@@ -24,12 +24,12 @@
               Treact
             </a>
             <ul class="nav__links">
-              <li><a href="#" class="nav__link">About</a></li>
-              <li><a href="#" class="nav__link">Blog</a></li>
-              <li><a href="#" class="nav__link">Pricing</a></li>
-              <li><a href="#" class="nav__link">Contact Us</a></li>
-              <li>
-                <a href="#" class="nav__link nav__link--secondary">Login</a>
+              <li class="nav__link">Blog</li>
+              <li class="nav__link">About</li>
+              <li class="nav__link">Pricing</li>
+              <li class="nav__link">Contact Us</li>
+              <li class="nav__link ">
+                Login
               </li>
               <li>
                 <a href="#" class="nav__link nav__link--primary">Sign Up</a>
@@ -39,6 +39,7 @@
         </nav>
       </section>
       <section>
+        <div class="row">
         <div class="landing__template">
           <div class="landing__template--left">
             <h1>
@@ -49,17 +50,17 @@
               modular components with a variety of pages and components.
             </p>
             <div class="email__input--sec">
-              <input
+             <div class="email__input"> <input
                 class="text__box"
                 type="text"
                 placeholder="Your E-mail Address"
-              />
+              /></div>
               <div class="email__button">
               <button class="button">Get Started</button>
             </div>
             </div>
             <div class="customer__logo">
-              <p><strong>OUR TRUSTED CUSTOMERS</strong></p>
+              <p class="trusted__customers"><strong>OUR TRUSTED CUSTOMERS</strong></p>
               <img
                 src="https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png"
                 alt=""
@@ -75,79 +76,79 @@
             />
           </div>
         </div>
+      </div>
       </section>
       <section>
         <div class="container">
           <div class="row">
-            <h1 class="features"><span class="purple">Features</span></h1>
+           <div class="features__container"><h1 class="features"><span class="purple">Features</span></h1>
             <h1 class="services__h1">We have Amazing <span class="purple" style="margin-left:12px">Service</span></h1>
             <p class="service__para">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequuntur laboriosam ex quia recusandae deserunt assumenda
               ullam tempora, in ea et?
             </p>
-            <ul class="services">
-              <li class="service">
-                <i class="fa fa-shield service__img"></i>
-                <div class="service__description">
-                  <h2 class="service__title">Secure</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ab, numquam.
-                  </p>
-                </div>
-              </li>
-              <li class="service">
-                <i class="fa fa-headset service__img"></i>
-                <div class="service__description">
-                  <h2 class="service__title">24/7 Support</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ab, numquam.
-                  </p>
-                </div>
-              </li>
-              <li class="service">
-                <i class="fa-solid fa-sliders service__img"></i>
-                <div class="service__description">
-                  <h2 class="service__title">Customizable</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ab, numquam.
-                  </p>
-                </div>
-              </li>
-              <li class="service">
-                <i class="fas fa-arrow-right service__img"></i>
-                <div class="service__description">
-                  <h2 class="service__title">Reliable</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ab, numquam.
-                  </p>
-                </div>
-              </li>
-              <li class="service">
-                <i class="fa-solid fa-paper-plane service__img"></i>
-                <div class="service__description">
-                  <h2 class="service__title">Fast</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ab, numquam.
-                  </p>
-                </div>
-              </li>
-              <li class="service">
-                <i class="fa-solid fa-handshake-simple service__img"></i>
-                <div class="service__description">
-                  <h2 class="service__title">Easy</h2>
-                  <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Ab, numquam.
-                  </p>
-                </div>
-              </li>
-            </ul>
+          </div> 
+         
+<div class="services__wrapper">
+  <ul class="services">
+    <li class="service">
+      <i class="fa fa-shield service__img"></i>
+      <div class="service__description">
+        <h2 class="service__title">Secure</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
+        </p>
+      </div>
+    </li>
+    <li class="service">
+      <i class="fa fa-headset service__img"></i>
+      <div class="service__description">
+        <h2 class="service__title">24/7 Support</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
+        </p>
+      </div>
+    </li>
+    <li class="service">
+      <i class="fa-solid fa-sliders service__img"></i>
+      <div class="service__description">
+        <h2 class="service__title">Customizable</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
+        </p>
+      </div>
+    </li>
+    <li class="service">
+      <i class="fas fa-arrow-right service__img"></i>
+      <div class="service__description">
+        <h2 class="service__title">Reliable</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
+        </p>
+      </div>
+    </li>
+    <li class="service">
+      <i class="fa-solid fa-paper-plane service__img"></i>
+      <div class="service__description">
+        <h2 class="service__title">Fast</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
+        </p>
+      </div>
+    </li>
+    <li class="service">
+      <i class="fa-solid fa-handshake-simple service__img"></i>
+      <div class="service__description">
+        <h2 class="service__title">Easy</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
+        </p>
+      </div>
+    </li>
+  </ul>
+</div>
+
           </div>
         </div>
       </section>
@@ -167,10 +168,10 @@
         <button class="button__qw">Learn More</button>
       </div>
       <div class="quality__work--right">
-        <img
+        <div class="quality__work--iwrapper"><img
           src="https://treact.owaiskhan.me/static/media/hero-screenshot-1.40a097b525c2f8c9808e.png"
           class="quality__work--img"
-        />
+        /></div>
       </div>
     </div>
     <div class=" row row__gs">
@@ -182,7 +183,7 @@
         />
       </div>
       <div class="get__started--right">
-        <h2><span class="purple">STEPS</span></h2>
+        <h2 class="steps__h2"><span class="purple">STEPS</span></h2>
         <h1 class="gs__h1">Easy to <span class="purple">Get Started</span></h1>
         <ul class="gs__info">
           <li class="gs__info--wrapper">
@@ -231,17 +232,14 @@
     </div>
     <section>
       <div class="row row__values">
+      <div class="values__wrapper">
         <div class="row__values--left">
           <h5 class="values__h5"><span class="purple">VALUES</span></h5>
           <h1 class="values__h1">
             We Always Abide by Our <span class="purple">Principles</span>
           </h1>
           <p class="values__para">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam a
-            quibusdam veritatis quisquam eligendi blanditiis rem tempore
-            voluptatem qui. Esse placeat commodi a adipisci eos beatae deserunt
-            eligendi hic sed id corporis corrupti neque explicabo repudiandae
-            numquam, sapiente est illum.
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, consequuntur id reiciendis aspernatur architecto laboriosam officia distinctio. Laudantium pariatur quae aperiam quia blanditiis corrupti fugit ex architecto, modi exercitationem, cupiditate incidunt quam iure maxime!
           </p>
           <div class="values__double--para">
             <div class="para__left">
@@ -273,6 +271,7 @@
           />
         </div>
       </div>
+      </div>
       </section>
       <section id="pricing">
         <div class="pricing__container">
@@ -288,6 +287,7 @@
                 <div class="price__name">PERSONAL</div>
                 <div class="price__subheader">$17.99</div>
                 <div class="price__frequency">MONTHLY</div>
+              
               </div>
               <div class="price__middle">
                 <span class="price__middle--header">For Individuals</span>
@@ -298,9 +298,9 @@
             
               </div>
               <div class="price__bottom">
-                <a href="#"> <button class="price__button--left">BUY NOW</button></a>
+                 <button class="price__button--left">BUY NOW</button>
               </div>
-              </div>
+            </div> 
               <div class="pricing__center">
                 <div class="price__top2">
                   <div class="price__name--middle">BUSINESS</div>
@@ -316,7 +316,7 @@
               
                 </div>
                 <div class="price__bottom">
-                  <a href="#"> <button class="price__button--center">BUY NOW</button></a>
+                <button class="price__button--center">BUY NOW</button>
                 </div>
 
               </div>
@@ -335,7 +335,7 @@
               
                 </div>
                 <div class="price__bottom">
-                  <a href="#"> <button class="price__button--right">BUY NOW</button></a>
+                 <button class="price__button--right">BUY NOW</button>
                 </div>
             </div>             
           </div>
