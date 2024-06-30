@@ -6,8 +6,8 @@
     <title>Treact</title>
     <script
       src="https://kit.fontawesome.com/63a77cea2d.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
+      <script src="index.js"></script>
   </head>
   <link rel="stylesheet" href="style.css"/>
   <body>
@@ -35,7 +35,24 @@
                 <a href="#" class="nav__link nav__link--primary">Sign Up</a>
               </li>
             </ul>
+            <button class="button__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+              <button class="button__menu button__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Blog</a></li>
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">About</a></li>
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Pricing</a></li>
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Contact Us</a></li>
+                <li class="menu__list"><a href="" class="menu__link" onclick="closeMenu()">Login</a></li>
+
+              </ul>
+            </div>
           </div>
+         
         </nav>
       </section>
       <section>
@@ -54,7 +71,7 @@
               <input
                 class="text__box"
                 type="text"
-                placeholder="Your E-mail"/>
+                placeholder="Your E-mail Address"/>
             
             <div class="email__button">
               <button class="button">Get Started</button>
@@ -99,8 +116,8 @@
       <i class="fa fa-shield service__img"></i>
       <div class="service__description">
         <h2 class="service__title">Secure</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
+        <p class="services__para">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
         </p>
       </div>
     </li>
@@ -108,7 +125,7 @@
       <i class="fa fa-headset service__img"></i>
       <div class="service__description">
         <h2 class="service__title">24/7 Support</h2>
-        <p>
+        <p class="services__para">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
         </p>
       </div>
@@ -117,7 +134,7 @@
       <i class="fa-solid fa-sliders service__img"></i>
       <div class="service__description">
         <h2 class="service__title">Customizable</h2>
-        <p>
+        <p class="services__para">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
         </p>
       </div>
@@ -126,7 +143,7 @@
       <i class="fas fa-arrow-right service__img"></i>
       <div class="service__description">
         <h2 class="service__title">Reliable</h2>
-        <p>
+        <p class="services__para">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
         </p>
       </div>
@@ -135,7 +152,7 @@
       <i class="fa-solid fa-paper-plane service__img"></i>
       <div class="service__description">
         <h2 class="service__title">Fast</h2>
-        <p>
+        <p class="services__para">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
         </p>
       </div>
@@ -144,7 +161,7 @@
       <i class="fa-solid fa-handshake-simple service__img"></i>
       <div class="service__description">
         <h2 class="service__title">Easy</h2>
-        <p>
+        <p class="services__para">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, numquam.
         </p>
       </div>
@@ -527,7 +544,22 @@ class="feather feather-chevron-down"
     </div>
     </div>
   </section>
- 
+ <div class="row">
+  <div class="pre__footer--wrapper">
+<div class="pre__footer">
+  <div class="pre__footer--content">
+   <div class="content__left">
+    <h1 class="pre__footer--h1">Developers all over the world are happily using Treact.</h1>
+  </div>
+    <div class="content__right">
+      <button class="pre__footer--button">Get Started</button>
+    <button class="pre__footer--button2">Contact Us</button>
+  </div>
+
+  </div>
+</div>
+  </div>
+ </div>
   </body>
   
   
@@ -550,7 +582,7 @@ class="feather feather-chevron-down"
         <h5 class="link__list">About Us</h5>
       
       </div>
-      <div class="link">
+      <div class="link__3">
         <h4 class="link__header">Press</h4>
         <h5 class="link__list">Logos</h5>
         <h5 class="link__list">Events</h5>
