@@ -54,6 +54,24 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: animate-nav 800ms; 
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@keyframes animate-nav{
+  0%{
+    transform: scale(0);
+  }
+
+  80%{
+    transform: scale(1) ;
+  }
+
+  100%{
+    transform: scale(1);
+  }
 }
 
 .logo {
@@ -63,8 +81,7 @@ a:hover {
 }
 
 .logo__text {
-  display: flex;
-  padding-left: 24px;
+  display: flex;;
   font-size: 28px;
   align-items: center;
   color: #242424c6;
@@ -191,6 +208,20 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fade-up 1200ms 600ms backwards;
+}
+
+
+@keyframes  fade-up{
+  0%{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header__img {
@@ -233,6 +264,7 @@ h1 {
 }
 
 .email__button {
+  position:relative
 }
 
 .button {
@@ -251,8 +283,9 @@ h1 {
   margin-left: 32px;
   margin-top: 8px;
   margin-bottom: 8px;
-  position: relative;
-  bottom: -1.4px;
+  position: absolute;
+  left: 47%;
+  bottom:45.5%;
 }
 
 button:hover {
@@ -1281,6 +1314,10 @@ button:hover {
     margin-bottom: 16px;
     padding: 0;
   }
+
+  .services{
+    padding: 48px; 24px;
+  }
 }
 
 @media (max-width: 980px) {
@@ -1327,13 +1364,18 @@ button:hover {
   }
 
   .email__button {
-    width: 100%;
-    margin-right: 16px;
     position: relative;
-    bottom: 66px;
-    left: 215px;
   }
+.button{
+  position: absolute;
+  top: 24%;
+  left: -7%;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
 
+}
   .landing__template--left {
     width: 100%;
     align-items: center;
@@ -1351,6 +1393,10 @@ button:hover {
 
   .testimonials__img {
     max-width: 400px;
+  }
+
+  .quality__work--left{
+    padding: 24px;
   }
 }
 
@@ -1439,10 +1485,8 @@ button:hover {
   }
   .email__button {
     width: 100%;
-    margin-right: 16px;
     position: relative;
-    top: 10px;
-    left: -12.5px;
+    padding-top: 14px;
   }
 
   .button {
@@ -1452,6 +1496,9 @@ button:hover {
     opacity: 1;
     border-radius: 9999px;
     font-weight: 700;
+    position: absolute;
+    left: -3.5%;
+
   }
 
   .trusted__customers {
